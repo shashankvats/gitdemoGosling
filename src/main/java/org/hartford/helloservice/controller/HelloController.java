@@ -17,6 +17,11 @@ public class HelloController {
         return new HelloResponseDTO("Hello World from Spring MVC port: " + port);
     }
 
+    @GetMapping
+    public String sayhi(){
+        return "Hi World from Spring MVC port: " + port;
+    }
+
     @GetMapping("morning")
     public String morning() {
         return "Good Morning";
